@@ -1,0 +1,119 @@
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/*стиль блоков*/
+.block {
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 1px;
+}
+
+/*Шапка сайта*/
+.cap {
+    border-radius: 10px;
+    background: #DEB887;
+    height: 100px;
+}
+
+/*Логотип*/
+.logo {
+    border-radius: 10px;
+}
+
+/*Фото*/
+.foto {
+    float: left;
+    width: 19%;
+    height: 200px;
+    border-radius: 10px;
+    /*box-sizing: border-box;*/
+    border: 1px solid black;
+}
+
+/*Блок ФИО*/
+.fio {
+    float: left;
+    width: 80%;
+    height: 50px;
+    background: #FFE4B5;
+}
+
+/*Текст в блоке ФИО*/
+.fio_text {
+    font-size: 30px;
+    margin: 0;
+    padding: 8px 50px;
+    text-align: center;
+
+}
+
+/*Блок о себе*/
+.info {
+    float: left;
+    width: 40%;
+    /*width: calc(100%*0.4);*/
+    height: 150px;
+    background: #98FB98;
+}
+
+/*Блок отзыв*/
+.reviev {
+    float: left;
+    width: 40%;
+    /*width: calc(100%*0.4);*/
+    height: 150px;
+    background: #87CEEB;
+}
+
+/*Блок контакты*/
+.contacts {
+    background: #CD853F;
+    height: 100px;
+    float: left;
+    width: 100%;
+}
+
+/*Текст в блоке "Отзыв"*/
+.text {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+/* Заголовки в блоках "о себе" и "отзыв" */
+.header {
+    text-align: center;
+    margin: 0;
+}
+
+/*Связаться со мной:*/
+.con {
+    float: left;
+    width: 48%;
+    margin: 1%;
+}
+
+/*>Д.З на GitHub*/
+.rep {
+    text-align: right;
+    float: right;
+    width: 48%;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+/* Картинка Telegram */
+.logo_telegram {
+    width: 50px;
+    float: left;
+    margin: 5px 10px 5px 10px;
+}
+
+/* Картинка Github */
+.logo_github {
+    width: 50px;
+    float: right;
+    margin: 5px 10px 5px 10px;
+}
