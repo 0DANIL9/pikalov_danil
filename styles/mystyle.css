@@ -1,3 +1,6 @@
+body {
+    background: linen;
+}
 .container {
     max-width: 900px;
     margin: auto;
@@ -21,6 +24,8 @@
 /*Логотип*/
 .logo {
     border-radius: 10px;
+    width: 100px;
+    height: 100px;
 }
 
 /*Фото*/
