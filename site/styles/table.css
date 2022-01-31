@@ -14,9 +14,14 @@ body {
     /*box-sizing: border-box;*/
     border: 1px solid black;
     margin: 1px;
+    transition: transform .2s;
+}
+/* Анимация блоков при наведении */
+.block:hover {
+    transform: scale(1.3);
 }
 
-/* Общая настойка текста в ячейках */
+/* Общая настойка текста в блоках */
 .h3h4h5 {
     margin: 0;
     padding: 5px 10px;
@@ -43,69 +48,74 @@ body {
     height: 40%;
     font-size: 25px;
 }
-/* Цвет первого типа ячеек */
+
+/* Цвет Блок-1Т */
 .cell-1_color {
     background: #87CEEB;
 }
-/**/
+
+/* Расположение текста в Блок-1Т */
 .cell-1_h3 {
     float: right;
     text-align: right;
 }
-/**/
+
+/* Расположение текста в Блок-1Т */
 .cell-1_h4 {
     float: right;
     text-align: left;
 }
-/**/
+
+/* Расположение текста в Блок-1Т */
 .cell-1_h5 {
     float: right;
     text-align: right;
 }
 
+/* Цвет Блок-2Т (Коричневый) */
 .cell-2_color-1 {
     background: brown;
 }
 
+/* Цвет Блок-2Т (Желтый) */
 .cell-2_color-2 {
     background: yellow;
 }
 
+/* Расположение теста в Блок-2Т */
 .cell-2_h3{
     float: left;
     text-align: left;
 }
 
+/* Расположение теста в Блок-2Т */
 .cell-2_h4 {
     float: left;
     text-align: right;
 }
 
+/* Расположение теста в Блок-2Т */
 .cell-2_h5 {
     float: left;
 }
 
+/* Цвет Блок-3Т */
 .cell-3_color {
    background: chartreuse;
 }
-.iskl {
-    /*height: 50%;*/
-/*    width: 100%;*/
-/*    font-size: 20px;*/
-/*    box-sizing: border-box;*/
-/*    margin: 0;*/
-/*    padding: 5px 10px;*/
-/*    font-weight: bold;*/
-/*    text-align: center;*/
-    margin: 15% 0 0 0 ;
-}
+
+/* Расположение теста в Блок-3Т */
 .cell-3_h4-h5 {
     text-align: center;
     width: 100%;
 }
+
+/* Отступ для текста в Блок-3Т */
 .cell-3_h5 {
     margin: 15% 0 0 0 ;
 }
+
+/* Цвет текста в ссылке*/
 a {
     color: black;
     /*text-decoration: none;*/
