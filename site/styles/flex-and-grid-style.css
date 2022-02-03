@@ -1,0 +1,111 @@
+/* Блок под flex */
+.flex-block {
+    max-width: 100%;
+    margin: auto;
+    float: left;
+}
+
+/* Flex-1(Картинки) */
+.flex-block__flex-img {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 10px 0px 10px;
+}
+/* Flex-3(Заголовки) */
+.flex-block__flex-h3 {
+    display: flex;
+    /*width: 80%;*/
+    justify-content: space-around;
+    margin: 0px 10px 10px 10px;
+}
+
+/* Flex-2(Описание) */
+.flex-block__flex-p {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 10px 10px 10px;
+}
+
+/*Картинки в блоке Flex-1 */
+.img {
+    width: 250px;
+    /*width: calc(25% - 10px);*/
+    margin: 5px;
+    transition: transform .2s;
+    /*flex: 1;*/
+    border-radius: 10px;
+}
+
+/* Анимация при наведении на ссылку/картинку */
+.img:hover {
+    transform: scale(1.2);
+}
+
+/* Настройка блока Flex-3 */
+.p {
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background: linen;
+    margin: 0 10px 0 10px;
+}
+
+/* Настройка блока Flex-3 c описание */
+.h3 {
+    margin: 0 30px 0 30px;
+    text-align: center;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #CD853F;
+}
+
+/* Контейнер под Grid, ДЗ от 02.02.2022  */
+.Grig-block {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Блок Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 10px 0 10px;
+    width: 100%;
+    /*align-content: space-around;*/
+    align-items: center;
+}
+
+/* Настройка картинок в блоке Grid */
+.img-2 {
+    width: calc(100% - 20px);
+    transition: transform .2s;
+    border-radius: 7%;
+    padding: 0 10px 0 10px;
+}
+
+/* Анимация картинок/ссылок при наведений */
+.img-2:hover {
+    transform: scale(1.1);
+}
+
+/* Настройка описания в блоке Grid */
+.p-2 {
+    /*width: 250px;*/
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background: linen;
+    margin: 0 10px 20px 10px;
+}
+
+/* Настройка заголовков в Grid */
+.h3-2 {
+    margin: 0 30px 0 30px;
+    text-align: center;
+    /*width: 25%;*/
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #CD853F;
+}
