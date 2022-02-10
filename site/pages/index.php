@@ -10,21 +10,17 @@ if(date('H') >= 8 && date('H') < 20){
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="<? echo $style; ?>">
+    <link rel="stylesheet" href="<?php echo $style; ?>">
     <link rel="stylesheet" href="../styles/flex-and-grid-style.css">
     <title>Главная</title>
 </head>
 <body>
     <div class="container">
         <!-- Шапка сайта -->
-        <header class="cap">
-            <img src="../image/logo.jpg" alt="логотип" class="logo">
-            <a href="table.html" title="перейти в table.html" target="_blank">
-                <img src="../image/table_2.PNG" alt="иконка таблицы менделеева" class="logo">
-            </a>
-        </header>
+        <?php include 'header.php' ?>
 
         <hr>
+
         <div class="main">
             <!--Блок ФИО-->
             <div class="fio block">
@@ -160,5 +156,7 @@ if(date('H') >= 8 && date('H') < 20){
                     </div>
                 </div>
     </div>
+    <!--Подвал -->
+    <?php include 'footer.php' ?>
 </body>
 </html>

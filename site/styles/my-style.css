@@ -1,0 +1,29 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(3 , 1fr);
+	/*background: orange ;*/
+}
+.block {
+	border-radius: 10px;
+	background: yellow;
+}
+.task-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.task-2-h3 {
+	text-align: center;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.h3 {
+	text-align: center;
+}
+.task-1 {
+	background: firebrick;
+}
+.task-3 {
+	background: chartreuse;
+}

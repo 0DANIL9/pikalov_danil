@@ -2,8 +2,15 @@ body {
     background: darkolivegreen;
 }
 .container {
+    /*display: grid;*/
+    /*grid-template-columns: repeat(4,1fr);*/
     max-width: 800px;
     margin: auto;
+}
+.block-mine {
+    width: 100%;
+
+
 }
 
 /* Разметка блоков таблицы */

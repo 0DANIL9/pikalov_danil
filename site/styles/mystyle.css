@@ -17,7 +17,6 @@ body {
 /*Шапка сайта*/
 .cap {
     display: flex;
-    /*grid-template-columns: 1fr 1fr;*/
     border-radius: 10px;
     background: #CD853F;
     height: 100px;
@@ -28,14 +27,16 @@ body {
     border-radius: 10px;
     width: 100px;
     height: 100px;
-    margin: 1px;
+    transition: transform .2s;
+}
+.logo:hover {
+    transform: scale(1.1);
 }
 
 .main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 3px;
-    /*width: 100%*/
 }
 
 /*Фото*/
@@ -134,11 +135,20 @@ body {
     float: right;
     margin: 5px 10px 5px 10px;
 }
+.footer {
+    display: flex;
+    border-radius: 10px;
+    background: #CD853F;
+    height: 100px;
+}
 
 @media screen and (max-width: 600px) {
     .cap {
         height: 50px;
     }
+    .footer {
+        height: 50px;
+     }
     .logo {
         width: 50px;
         height: 50px;
@@ -179,3 +189,4 @@ body {
         grid-column-end:6;
     }
 }
+
