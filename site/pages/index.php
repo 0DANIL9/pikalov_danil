@@ -1,10 +1,30 @@
 <?php
+//Задаем часовой пояс и меняем подключаемый стиль в зависимости от в текущего времени
 date_default_timezone_set('Asia/Yekaterinburg');
 if(date('H') >= 8 && date('H') < 20){
     $style = '../styles/mystyle.css';
 }else{
     $style = '../styles/mystyle-night.css';
 }
+//Добавляем дату рождения вычисляем прожитые дни
+$date_of_birth = date_create_from_format('Y-m-d', '1993-08-28');
+$todays_date = date_create_from_format('Y-m-d', date('Y-m-d'));
+$days_lived = (array) date_diff($date_of_birth, $todays_date);
+
+//$file = array(file('index.php'));
+//foreach ($file as $item){
+//    echo $file_1 = strip_tags($item);
+//}
+//echo '<pre>';
+//print_r($file) ;
+//echo '</pre>'
+
+//$file = file_get_contents('index.php');
+//$file_1 = strip_tags($file);
+//echo $file_1;
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -34,17 +54,69 @@ if(date('H') >= 8 && date('H') < 20){
             <div class="info block">
                 <h3 class="header">О себе</h3>
                 <ul>
-                    <li> Родился </li>
+                    <li>
+                        <?php
+                        $b = rand(0,5);
+                        $text = "Родился";
+                        switch ($b) {
+                        case '0':
+                        echo "<span style='color:red;'>$text</span> ";
+                        break;
+                        case '1':
+                        echo "<span style='color:orange;'>$text</span> ";
+                        break;
+                        case '2':
+                        echo "<span style='color:yellow;'>$text</span> ";
+                        break;
+                        case '3':
+                        echo "<span style='color:green;'>$text</span> ";
+                        break;
+                        case '4':
+                        echo "<span style='color:blue;'>$text</span> ";
+                        break;
+                        case '5':
+                        echo "<span style='color:rebeccapurple;'>$text</span> ";
+                        break;
+                        }
+                        ?>
+                    </li>
                     <li> Учился </li>
                     <li> Работаю </li>
+                    <li> Дней прожито:<?php echo $days_lived['days'];?></li>
                 </ul>
             </div>
 
             <!-- Блок отзыв -->
             <div class="reviev block">
                 <h3 class="header">Отзыв</h3>
-                <p class="text"> Всё нравится. Хотелось бы больше инфрмации о том как надо делать правильно,
-                    какие есть стандарты и регламенты
+                <p class="text">
+                    <?php
+                    //$text = "Всё нравится. Хотелось бы больше информации о том как надо делать правильно, какие есть стандарты и регламенты";
+                    //$arr = explode(' ', $text);
+                    //$i = 0;
+                    //for($i = 0; $i < 50 ;$i++) {
+                    //    if(($arr2[$i] % 2) == 0) {
+                    //        echo "<span style='color:red;'>$arr2[$i]</span><br>";
+                    //    }
+                    //    else{
+                    //        echo "<span style='color:blue;'>$arr2[$i]</span><br/>";
+                    //    }
+                    //}
+                    //print_r(array_keys($arr));
+                    //print_r($arr);
+
+                    $arr2 = array("Всё", "нравится.","Хотелось","бы","больше","информации","о","том", "как", "надо",
+                        "делать", "правильно", "какие", "есть", "стандарты", "и", "регламенты.",);
+                    $i = 0;
+                    foreach ($arr2 as $value){
+                    if(($i % 2) == 0){
+                    echo "<span style='color:red;'>$value</span> ";
+                    }else{
+                    echo "<span style='color:blue;'>$value</span> ";
+                    }
+                    $i++;
+                    }
+                    ?>
                 </p>
             </div>
 
