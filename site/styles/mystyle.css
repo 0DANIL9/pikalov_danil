@@ -1,6 +1,7 @@
 body {
     background: #DEB887;
 }
+
 .container {
     max-width: 90%;
     margin: auto;
@@ -136,19 +137,18 @@ body {
     margin: 5px 10px 5px 10px;
 }
 .footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border-radius: 10px;
     background: #CD853F;
     height: 100px;
 }
 
+
 @media screen and (max-width: 600px) {
     .cap {
         height: 50px;
     }
-    .footer {
-        height: 50px;
-     }
     .logo {
         width: 50px;
         height: 50px;
@@ -172,6 +172,9 @@ body {
 }
 
 @media screen and (max-width: 320px){
+    .footer {
+        grid-template-columns: 1fr;
+    }
     .foto {
         grid-column-start: 2;
         grid-column-end:5 ;
