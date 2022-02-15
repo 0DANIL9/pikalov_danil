@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8070ee3-766f-4782-bd07-b8158ddaaf0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/site/pages/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/pages/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/pages/lesson.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/pages/опрос.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/styles/heder_and_footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/styles/my-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/pages/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/styles/mystyle-night.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/styles/mystyle-night.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/styles/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/styles/mystyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/styles/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/styles/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/pages/опрос.txt" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/опрос.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +63,7 @@
       <workItem from="1644939666234" duration="3364000" />
       <workItem from="1644943196917" duration="4133000" />
       <workItem from="1644947434804" duration="6298000" />
+      <workItem from="1644955050246" duration="113000" />
     </task>
     <servers />
   </component>
