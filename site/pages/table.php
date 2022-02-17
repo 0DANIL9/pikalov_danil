@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php include 'header.php' ?>
-    <div class="container">
+    <div class="container">w
         <!-- Блок-1Т -->
         <div>
         <a href="https://ru.wikipedia.org/wiki/Серебро" title="Нажмите чтоб узнать больше" target="_blank">

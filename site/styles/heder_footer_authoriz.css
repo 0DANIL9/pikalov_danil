@@ -1,0 +1,26 @@
+/* подсчет слов текст */
+.countingwords {
+    padding: 5px 10px;
+    justify-items: center;
+    margin: 0;
+}
+/* Разметка страницы авторизация */
+.authorization {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+/* Форма авторизации */
+.authorization_form {
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: linen;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+/* Поля ввода в форме авторизации */
+.authorization_form_input {
+    text-align: center;
+}

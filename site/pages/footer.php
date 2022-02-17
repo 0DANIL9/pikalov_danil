@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/heder_and_footer.css">
+    <link rel="stylesheet" href="../styles/heder_footer_authoriz.css">
     <title>Главная</title>
 </head>
 <body>

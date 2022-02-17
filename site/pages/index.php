@@ -84,7 +84,7 @@ function raz(){
     <meta charset="UTF-8">
     <link rel="stylesheet" href="<?php ti(); ?>">
     <link rel="stylesheet" href="../styles/flex-and-grid-style.css">
-    <link rel="stylesheet" href="../styles/heder_and_footer.css">
+    <link rel="stylesheet" href="../styles/heder_footer_authoriz.css">
     <title>Главная</title>
 </head>
 <body>

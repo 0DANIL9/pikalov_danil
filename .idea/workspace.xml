@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8070ee3-766f-4782-bd07-b8158ddaaf0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/pages/опрос.txt" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/опрос.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/pages/authorization.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/pages/script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/pages/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/pages/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/pages/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/pages/table.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/pages/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/styles/heder_and_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/styles/heder_footer_authoriz.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/styles/mystyle-night.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/styles/mystyle-night.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/styles/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/styles/mystyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +54,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/site/pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\FAKT\pikalov_danil\site\pages" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,6 +79,9 @@
       <workItem from="1644943196917" duration="4133000" />
       <workItem from="1644947434804" duration="6298000" />
       <workItem from="1644955050246" duration="113000" />
+      <workItem from="1645018441731" duration="753000" />
+      <workItem from="1645110502076" duration="1528000" />
+      <workItem from="1645112096467" duration="9832000" />
     </task>
     <servers />
   </component>

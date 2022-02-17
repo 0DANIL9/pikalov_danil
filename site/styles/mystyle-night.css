@@ -17,8 +17,9 @@ body {
 
 /*Шапка сайта*/
 .cap {
-    display: flex;
-    /*grid-template-columns: 1fr 1fr;*/
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
     border-radius: 10px;
     background: #CD853F;
     height: 100px;
@@ -30,6 +31,10 @@ body {
     width: 100px;
     height: 100px;
     /*margin: 1px;*/
+    transition: transform .2s;
+}
+.logo:hover {
+    transform: scale(1.1);
 }
 
 .main {

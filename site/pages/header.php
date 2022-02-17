@@ -4,6 +4,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/heder_footer_authoriz.css">
     <title>Главная</title>
 </head>
 <body>
@@ -17,6 +18,9 @@
             </a>
             <a href="lesson.php" title="перейти к ДЗ" target="_blank">
                 <img src="../image/DZ.PNG" alt="иконка ДЗ" class="logo">
+            </a>
+            <a href="authorization.php" title="Войти" >
+                <img src="../image/vhod.jpg" alt="иконка ДЗ" class="logo">
             </a>
         </header>
 </body>
