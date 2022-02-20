@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8070ee3-766f-4782-bd07-b8158ddaaf0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/site/pages/authorization.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/pages/script.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/image/DZ1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/pages/bitrix.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/pages/connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/pages/fact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/pages/lesson1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/pages/registration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/pages/signin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/pages/signup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/pages/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/pages/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/authorization.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/pages/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/pages/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/pages/lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/lesson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/pages/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/script.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/pages/table.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/pages/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/styles/heder_and_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/styles/heder_footer_authoriz.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/styles/mystyle-night.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/styles/mystyle-night.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/styles/heder_footer_authoriz.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/styles/heder_footer_authoriz.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/styles/mystyle-night.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/site/styles/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/styles/mystyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/styles/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/styles/table.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +53,21 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="24sOVQSJPa4GOokceTUDpw4IgMu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/site/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -82,6 +94,9 @@
       <workItem from="1645018441731" duration="753000" />
       <workItem from="1645110502076" duration="1528000" />
       <workItem from="1645112096467" duration="9832000" />
+      <workItem from="1645191154619" duration="1950000" />
+      <workItem from="1645262788122" duration="18122000" />
+      <workItem from="1645342759266" duration="21738000" />
     </task>
     <servers />
   </component>
@@ -98,5 +113,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

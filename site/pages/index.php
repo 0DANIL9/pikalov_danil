@@ -1,14 +1,5 @@
 <?php
-//Задаем часовой пояс и меняем подключаемый стиль в зависимости от в текущего времени
-function ti(){
-date_default_timezone_set('Asia/Yekaterinburg');
-if(date('H') >= 8 && date('H') < 20){
-    $style = '../styles/mystyle.css';
-}else{
-    $style = '../styles/mystyle-night.css';
-}
-echo $style;
-}
+session_start();
 //Добавляем дату рождения вычисляем прожитые дни.
 function dr(){
 $date_of_birth = date_create_from_format('Y-m-d', '1993-08-28');
@@ -16,7 +7,7 @@ $todays_date = date_create_from_format('Y-m-d', date('Y-m-d'));
 $days_lived = (array) date_diff($date_of_birth, $todays_date);
     echo $days_lived['days'];
 }
-
+//раскрашиваем первое слово блока "О себе"
 function ab(){
     $b = rand(0,5);
     $text = "Родился";
@@ -82,15 +73,15 @@ function raz(){
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="<?php ti(); ?>">
+    <link rel="stylesheet" href="../styles/mystyle.css">
     <link rel="stylesheet" href="../styles/flex-and-grid-style.css">
     <link rel="stylesheet" href="../styles/heder_footer_authoriz.css">
     <title>Главная</title>
 </head>
-<body>
+<?php include 'header.php' ?>
+<body class="<?php fon($f);?>">
     <div class="container">
         <!-- Шапка сайта -->
-        <?php include 'header.php' ?>
 
         <hr>
 

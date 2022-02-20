@@ -1,7 +1,30 @@
-body {
+.body-day {
     background: #DEB887;
 }
-
+.body-night {
+    background-image: url("../image/night.jpg");
+}
+.body-red {
+    background: red;
+}
+.body-orange {
+    background: orange;
+}
+.body-yellow {
+    background: yellow;
+}
+.body-green {
+    background: green;
+}
+.body-Aqua {
+    background: aqua;
+}
+.body-blue {
+    background: blue;
+}
+.body-purple {
+    background: purple;
+}
 .container {
     max-width: 90%;
     margin: auto;
@@ -36,6 +59,10 @@ body {
     transform: scale(1.1);
 }
 
+.logo-vhod {
+    grid-column-start: 10;
+    grid-column-end: 11;
+}
 
 .main {
     display: grid;

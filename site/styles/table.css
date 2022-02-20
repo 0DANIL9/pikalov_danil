@@ -2,9 +2,9 @@ body {
     background: darkolivegreen;
 }
 .container {
-    /*display: grid;*/
-    /*grid-template-columns: repeat(4,1fr);*/
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 60%;
     margin: auto;
 }
 .block-mine {
@@ -15,10 +15,10 @@ body {
 
 /* Разметка блоков таблицы */
 .block {
-    width: 24%;
-    height: 100px;
-    float: left;
-    /*box-sizing: border-box;*/
+    /*width: 24%;*/
+    height: 100%;
+    /*float: left;*/
+    /*box-sizing    : border-box;*/
     border: 1px solid black;
     margin: 1px;
     transition: transform .2s;
@@ -125,5 +125,5 @@ body {
 /* Цвет текста в ссылке*/
 a {
     color: black;
-    /*text-decoration: none;*/
+    text-decoration: none;
 }

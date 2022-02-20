@@ -1,3 +1,20 @@
+<?php
+session_start();
+////$f = "";
+//var_dump($_POST);
+//if(isset($_POST['fon'])) {
+//$f = $_POST['fon'];
+//setcookie("fon", $f);
+//}
+//else if(isset($_COOKIE['fon'])){
+//$f = $_COOKIE['fon'];
+//}
+//if(isset($_SESSION['fon'])){
+//$f = $_SESSION['fon'];}
+//function fon($f){
+//echo $f;
+//}
+//?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +25,7 @@
     <title>Document</title>
 </head>
 <?php include 'header.php' ?>
-<body>
+<body class="<?php fon($f);?>">
     <div class="container">
         <div class="block task-1 ">
             <h3 class="h3">Задание-1</h3>
