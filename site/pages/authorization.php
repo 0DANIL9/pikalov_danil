@@ -2,10 +2,19 @@
 session_start();
 setcookie(session_name(),session_id(),time()+3600);
 
+//Команда на удаление сессии
+// session_destroy();
 
 //var_dump($_SESSION);
-//var_dump($_COOKIE);
+date_default_timezone_set('Asia/Yekaterinburg');
+$counter = $_COOKIE["counter"];
+if (!isset($counter)){
+$counter = date('Y-m-d H:i:s'); 
+}else {
+$counter = $counter; 
+}
 
+// var_dump($_COOKIE);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +37,7 @@ setcookie(session_name(),session_id(),time()+3600);
                 <input type='password' name='password' placeholder="Введите пароль">
             </p>
             <p class="authorization_form_input">
-                <button>Войти</button>
+                <button type="submit">Войти</button>
             </p>
         </form>
         <p class="authorization_form_input">
@@ -53,6 +62,13 @@ setcookie(session_name(),session_id(),time()+3600);
             }
             }
             ?>
+        </p>
+        <p class="authorization_form_input">
+            Последнее посещение:
+        <?php echo  $counter; ?> 
+        </p>
+        <p class="authorization_form_input">
+            
         </p>
     </div>
 </div>

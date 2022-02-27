@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 //Задаем часовой пояс и меняем подключаемый стиль в зависимости от текущего времени
 function ti(){
     date_default_timezone_set('Asia/Yekaterinburg');
@@ -79,7 +80,15 @@ function fon($f){
 
         </div>
         <div class="logo-vhod">
+<?php
+// var_dump($_SESSION);
+if(!isset($_SESSION['login'])){
+    echo "Гость" . "<br>";
+}else {
+    echo $_SESSION['login'];
+}
 
+?>
 
             <a href="authorization.php" title="Войти" >
                 <button>Войти</button>

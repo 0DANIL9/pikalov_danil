@@ -1,4 +1,4 @@
-<?php header('Refresh: 3; authorization.php'); ?>
+<?php //header('Refresh: 3; index.php'); ?>
 <!--Сломалось хеширование пароля, надо всё переделать-->
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,6 @@ $pas = "pikalov";// Пароль в БД
 $ha = '$2y$10$0zRQrqsRf7fKkTRgnMOnUOGBWN7HnVnevVBofiASwLPW88QPijaJ.';//Типо сохранили пароль в БД
 
 /*Проверка наличия введенного логина в базе*/
-
 function prov($log,$password,$ha,$login,$pas){
 if ($log !== $login){
     exit ("<br /><br />Неверный логин!");
@@ -44,15 +43,28 @@ else {
 //    if(password_verify($password, $ha)){
 if($password == $pas){
         echo "<br /><br />Добро пожаловать! <br /><a href='index.php'>Главная</a><br />";
-
     }
     else {
         exit ("<br /><br />Неверный пароль!");
     }
 }
 }
+$_SESSION["login"] = $log;
+var_dump($_SESSION);
 ?>
-        <p class="authorization_form_input"><?php prov($log,$password,$ha,$login,$pas)?></p>
+    <p class="authorization_form_input"><?php prov($log,$password,$ha,$login,$pas)?>
+    <?php
+    //Счётчик посещений
+        if(isset($_COOKIE['posechen'])){
+            $pos = ($_COOKIE['posechen'] + 1);
+            setcookie("posechen",$pos,time()+3600);
+        } else if(isset($_POST['login'])){
+            $pos = $pos + 1;
+            setcookie("posechen",$pos,time()+3600);
+        }
+        echo "Вы посетили наш сайт" . " " . $pos . " " . "раз."; 
+    ?>
+    </p>
     </div>
 </div>
 </body>
