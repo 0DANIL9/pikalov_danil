@@ -80,20 +80,24 @@ function fon($f){
 
         </div>
         <div class="logo-vhod">
-<?php
-// var_dump($_SESSION);
-if(!isset($_SESSION['login'])){
-    echo "Гость" . "<br>";
-}else {
-    echo $_SESSION['login'];
-}
-
-?>
-
-            <a href="authorization.php" title="Войти" >
-                <button>Войти</button>
-            </a>
+                <?php
+                // var_dump($_SESSION);
+                if(!isset($_SESSION['login'])){
+                    echo "Гость" . "<br>";
+                }else {
+                    echo $_SESSION['login'];
+                }
+                ?>
+                <?php 
+                if(!isset($_SESSION['login'])){
+                  echo '<a href="authorization.php" title="Войти" >
+                  <button>Войти</button></a>';      
+                }
+                else {
+                    echo'<a href="close.php" title="Выход" >
+                    <button>Выход</button></a>';
+                }
+            ?>
         </div>
-
     </header>
 </body>

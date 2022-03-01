@@ -27,7 +27,7 @@ $counter = $counter;
 <body>
 <div class="authorization">
     <div class="authorization_form">
-        <form id='forma' action='script.php' method='post'>
+        <form id='forma' action='singin.php' method='post'>
             <p class="authorization_form_input">
                 Логин<br />
                 <input type='text' name='login' placeholder="Введите логин">
