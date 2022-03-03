@@ -15,7 +15,17 @@ header('Refresh: 3; index.php');
 <div class="authorization">
     <div class="authorization_form">
         <p class="authorization_form_input">
-            <?php
+            <?php 
+            // Сщздали переменную просто чтоб принять данные с формы и передать в класс
+            $user = new authorization($_POST['login'], $_POST['password']);
+
+            // Класс для авторизации
+            class authorization{
+                public $login;
+                public $password; 
+                
+                // Конструктор для обработки данныйх с формы
+                public function __construct($login, $password){
                 echo 'Переход на главную через 3 секунды' . "<br>";
                 //Заносим введенный пользователем логин в переменную $login, если он пустой, то уничтожаем переменную
                 if (isset($_POST['login'])) { $login = $_POST['login']; if ($login == '') { unset($login);} }
@@ -35,16 +45,9 @@ $password = filter_var(trim($password));//удаляет пробелы (или 
 // echo $login;
 // echo $password;
 
-// Задаём переменные для подключения к БД 
-$db_host = 'localhost'; 
-$db_user = 'danil'; 
-$db_password = 'qwerty'; 
-$db_name = 'users'; 
-// Подключаемся к БД, проверяем подключение
-$db_con = mysqli_connect($db_host, $db_user, $db_password, $db_name);
-if(!$db_con){
-    die('Ошибка подключения к базе данных');
-}
+// Подключение к БД
+require_once 'connect.php';
+
 //Запрос к БД
 $result = mysqli_query($db_con, "SELECT * FROM `users` WHERE `login` = '$login'");
 // print_r($result);
@@ -76,6 +79,8 @@ else {
     exit ("Введён неверный пароль");
     }
     }
+}
+            }
 ?>
         <p class="authorization_form_input">
             <?php

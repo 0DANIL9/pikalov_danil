@@ -1,6 +1,19 @@
 <?php
 session_start();
 
+// Сщздали переменную просто чтоб принять данные с формы и передать в класс
+$user = new registration($_POST['name'], $_POST['login'], $_POST['password'], $_POST['password_confirm']);
+
+// Класс для регистрации
+class registration{
+    public $name;
+    public $login;
+    public $pass; 
+    public $pass_2;
+    
+    // Конструктор для обработки данныйх с формы
+    public function __construct($name, $login, $pass, $pass_2){
+
 $name = filter_var(trim($_POST['name']),FILTER_SANITIZE_STRING);//удаляет пробелы (или другие символы) из начала и конца строки
 $login = filter_var(trim($_POST['login']),FILTER_SANITIZE_STRING);//удаляет пробелы (или другие символы) из начала и конца строки
 $pass = filter_var(trim($_POST['password']),FILTER_SANITIZE_STRING);//удаляет пробелы (или другие символы) из начала и конца строки
@@ -35,17 +48,9 @@ if($pass === $pass_2){
     header('location: registration.php');
     exit();
 }
+// Подключение к БД
+require_once 'connect.php';
 
-// Задаём переменные для подключения к БД 
-$db_host = 'localhost'; 
-$db_user = 'danil'; 
-$db_password = 'qwerty'; 
-$db_name = 'users'; 
-// Подключаемся к БД, проверяем подключение
-$db_con = mysqli_connect($db_host, $db_user, $db_password, $db_name);
-if(!$db_con){
-    die('Ошибка подключения к базе данных');
-}
 //Запрос к БД
 $result = mysqli_query($db_con, "SELECT * FROM `users` WHERE `login` = '$login'");
 // print_r($result);
@@ -56,10 +61,10 @@ $myrow = mysqli_fetch_array($result, MYSQLI_ASSOC);
 if (empty($myrow['login']))
     {
         //подключение и запись в БД данных с формы
-        require_once 'connect.php';
-        $connect->query("INSERT INTO `users` (`name`, `login`, `pass`)
+        // require_once 'connect.php';
+        $db_con->query("INSERT INTO `users` (`name`, `login`, `pass`)
         VALUES ('$name', '$login', '$pass')");
-        $connect->close();
+        $db_con->close();
         $_SESSION['msg'] = 'Регистрация прошла успешно';
         header('location: registration.php');
     }
@@ -68,5 +73,7 @@ else {
     $_SESSION['msg'] = 'Такой логин уже занят';
     header('location: registration.php');
 }    
+    }
+}
 ?>
 
